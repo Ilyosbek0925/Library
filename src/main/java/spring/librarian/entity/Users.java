@@ -1,6 +1,8 @@
 package spring.librarian.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,6 +20,7 @@ import java.util.Set;
 public class Users extends BaseEntity implements UserDetails {
     private String username;
     private String password;
+    @Enumerated(EnumType.STRING)
     private Roles role;
 
     public Roles getRole() {

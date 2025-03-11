@@ -11,10 +11,13 @@ import spring.librarian.repo.UserRepo;
 public class LoginService {
     @Autowired
     UserRepo userRepo;
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
 
     public String login(Users user) {
         user.setRole(Roles.USER);
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepo.save(user);
         return "success";
     }
