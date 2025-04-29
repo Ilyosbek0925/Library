@@ -1,0 +1,16 @@
+Mar 25, 2025 3:21:23 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8765"]
+Mar 25, 2025 3:21:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mar 25, 2025 3:21:37 PM spring.librarian.aop.ProcessingAspect processTimeOfAnyMethod
+INFO: 1743756722 s to execute findAllBooks method
+Mar 25, 2025 3:21:56 PM spring.librarian.aop.ProcessingAspect processTimeOfAnyMethod
+INFO: 1743756722 s to execute findAllBooks method
+Mar 25, 2025 3:21:57 PM spring.librarian.aop.ProcessingAspect processTimeOfAnyMethod
+INFO: 1743756722 s to execute findAllBooks method
+Mar 25, 2025 3:21:58 PM spring.librarian.aop.ProcessingAspect processTimeOfAnyMethod
+INFO: 1743756722 s to execute findAllBooks method
+Mar 25, 2025 3:21:59 PM spring.librarian.aop.ProcessingAspect processTimeOfAnyMethod
+INFO: 1743756722 s to execute findAllBooks method
+Mar 25, 2025 3:21:59 PM spring.librarian.aop.ProcessingAspect processTimeOfAnyMethod
+INFO: 1743756722 s to execute findAllBooks method

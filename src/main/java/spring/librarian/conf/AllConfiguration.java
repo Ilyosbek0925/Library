@@ -54,8 +54,8 @@ public class AllConfiguration {
                         requestMatchers("/book/findById/", "book/getAll", "/order/getAll", "/order/findById/", "/order/updateBook").
                         hasAnyAuthority("LIBRARIAN", "USER").
                         requestMatchers("/book/getAll").permitAll().anyRequest().permitAll())
-               // .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
-                        .httpBasic(Customizer.withDefaults()).build();
+               .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+                        .build();
 
     }
 

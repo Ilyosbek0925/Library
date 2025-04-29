@@ -19,24 +19,20 @@ public class AuthController {
     LoginService loginService;
     @Autowired
     AuthenticationManager authenticationManager;
-@Autowired
+    @Autowired
     JwtService jwtService;
+
     @PostMapping("/register")
     public String register(@RequestBody Users user) {
         return loginService.login(user);
     }
 
-@PostMapping("/login")
+    @PostMapping("/login")
     public String login(@RequestBody Users user) {
-    System.out.println("hatyabi loginga keldi");
         Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
         if (authenticate.isAuthenticated()) {
-            System.out.println("come");
             return jwtService.generateToken(user.getUsername());
         }
-return "fail";
-
+        return "fail";
     }
-
-
 }
